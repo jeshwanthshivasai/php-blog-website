@@ -40,6 +40,8 @@
 //     );
 // }
 
+import { Link } from "react-router-dom";
+
 // export default Blogs;
 
 // const Blogs = () => {
@@ -177,7 +179,13 @@ const Blogs = () => {
                     {/* Bottom: Button */}
                     <div className="mt-8 lg:mt-0">
                         <button className="bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600 transition duration-300">
-                            <a href="/blogs">More Blogs</a>
+                            <Link
+                            className="hover:text-orange-500 hover:underline hover:underline-offset-4 cursor-pointer"
+                            to="/blogs"
+                            >
+                                All Blogs
+                            </Link>
+                            {/* <a to="/blogs">More Blogs</a> */}
                         </button>
                     </div>
                 </div>
